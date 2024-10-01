@@ -1,16 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
 .main {
     background-color: whitesmoke;
-    height: 500px;
-    width: 400px;
+    border: 2px solid black;
+    width: 1440px;
+    height: 1040px;
     display: flex;
-    flex-direction: row;
+}
+
+.photo-container {
+    border: 2px solid green;
+    flex: 1;   
 }
 
 img {
-    width: 200px;
-    height: 300px;
+    /* this will make the image stretch and no overflow*/
+    height:0;
+    min-height:100%;
 }
 
-div.form-container {
-    background-color: lightblue;
+.form-container {
+    border: 2px solid blue;
+    flex: 2;
 }
+
+.signup-container {
+    background-color: pink;
+    border: 2px solid red;
+}
+
+#green {
+    color: darkgreen;
+}
+
+
+
+
