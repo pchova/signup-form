@@ -28,12 +28,16 @@ img {
 }
 
 .signup-container {
-    background-color: pink;
     border: 2px solid red;
 }
 
 #green {
     color: darkgreen;
+}
+
+fieldset {
+    border: none;
+    background-color: whitesmoke;
 }
 
 

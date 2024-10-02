@@ -21,10 +21,36 @@
             <p>
                 You <em>know</em> you want to.
             </p>
-            <form action="" method="POST"></form>
+            <form action="" method="POST">
+                <h2>Let's do this!</h2>
+
+                <fieldset>
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name">
+
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name">
+                </fieldset>
+
+                <fieldset>
+                    <label for="user_email">Email</label>
+                    <input type="email" id="user_email" name="email">
+
+                    <label for="phone_number">Phone Number</label>
+                    <input type="number" id="phone_number" name="phone_number">
+                </fieldset>
+
+                <fieldset>
+                    <label for="user_password">Password</label>
+                    <input type="password" id="user_password" name="password">
+
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="password">
+                </fieldset>
+            </form>
     
             <div class="signup-container">
-                <button>Create Account</button>
+                <button type="submit">Create Account</button>
                 <p>Already have an account?<span id="green"> Login</span></p>
             </div>
         </div>
