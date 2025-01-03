@@ -67,47 +67,25 @@ img {
 .form-row {
     background-color: white;
     display: flex;
-    flex-direction: column;
-  }
+    flex-direction: row;
+}
+
+.form-row label {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
   
-  .form-row input[type='text'] {
+.form-row input[type='text'],
+.form-row input[type='email'],
+.form-row input[type='number'],
+.form-row input[type='password'] {
     background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
-    width: 30%;
+    width: 100%;
     padding: 7px;
-  }
-
-  .form-row input[type='email'] {
-    background-color: #FFFFFF;
-    border: 1px solid #D6D9DC;
-    border-radius: 3px;
-    width: 30%;
-    padding: 7px;
-  }
-
-  .form-row input[type='number'] {
-    background-color: #FFFFFF;
-    border: 1px solid #D6D9DC;
-    border-radius: 3px;
-    width: 30%;
-    padding: 7px;
-  }
-
-  .form-row input[type='password'] {
-    background-color: #FFFFFF;
-    border: 1px solid #D6D9DC;
-    border-radius: 3px;
-    width: 30%;
-    padding: 7px;
-  }
-
-
-
-
-
-
-
+}
 
 
 .signup-container {
