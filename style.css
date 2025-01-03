@@ -56,7 +56,11 @@ img {
 } 
 
 .form h2, fieldset {
-    margin: 30px 40px;
+    margin: 5px 40px;
+}
+
+.form h2 {
+    padding-top: 20px;
 }
 
 .form {
@@ -68,6 +72,12 @@ img {
     background-color: white;
     display: flex;
     flex-direction: row;
+    width: 70%;
+}
+
+.form-row div {
+    padding: 15px;
+    flex: 1;
 }
 
 .form-row label {
@@ -113,7 +123,7 @@ fieldset {
     border: none;
     border-radius: 4px;
     padding: 10px 25px;
-
+    cursor: pointer;
 }
 
 
