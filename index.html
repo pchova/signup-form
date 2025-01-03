@@ -24,7 +24,7 @@
                 </h2>
             </div>
 
-            <form class="form" action="" method="POST">
+            <form class="form" action="#" method="POST">
                 <h2>Let's do this!</h2>
 
                 <fieldset class="form-row">
@@ -47,25 +47,25 @@
 
                     <div>
                         <label for="phone_number">PHONE NUMBER</label>
-                        <input type="number" id="phone_number" name="phone_number">
+                        <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX" required>
                     </div>
                 </fieldset>
 
                 <fieldset class="form-row">
                     <div>
                         <label for="user_password">PASSWORD</label>
-                        <input type="password" id="user_password" name="password">
+                        <input type="password" id="user_password" name="password" required>
                     </div>
 
                     <div>
                         <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm_password" name="password">
+                        <input type="password" id="confirm_password" name="password" required>
                     </div>
                 </fieldset>
             </form>
-    
+
             <div class="signup-container">
-                <button type="submit" class="submitBtn">Create Account</button>
+                <button type="submit" id="submitBtn">Create Account</button>
                 <p>Already have an account?<span id="green"> Log in</span></p>
             </div>
         </div>
