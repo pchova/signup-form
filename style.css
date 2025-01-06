@@ -180,7 +180,8 @@ body {
 
 /* **** SUBMIT BUTTON AND CONTAINER CSS **** */
 .signup-container {
-    margin: 30px 40px 0;
+    /*margin: 30px 40px 0;*/
+    margin: 30px 40px 200px 40px;
 }
 
 .signup-container p {
