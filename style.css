@@ -57,20 +57,20 @@ body {
 
     position: relative;
     z-index: 3;
-    top: 100px;
+    top: 166px;
 }
 
 #left-logo {
     flex: 1;
     margin: 10px;
-    max-width: 20%;
+    max-width: 18%;
 }
 
 #right-logo {
     flex: 1;
     margin: 10px;
     font-family: Norse-bold;
-    font-size: 100px;
+    font-size: 90px;
     color: white;
     flex-grow: 0;
 }
@@ -91,6 +91,7 @@ body {
     justify-content: flex-end;
     margin: 30px 40px 60px;
     width: 70%;
+    padding-top: 10%;;
 }
 
 .form-header h2:nth-child(2) {
@@ -108,6 +109,9 @@ body {
 .form {
     flex:1;
     background-color: white;
+}
+
+.inner-form {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
@@ -155,7 +159,7 @@ body {
 
 /* **** SUBMIT BUTTON AND CONTAINER CSS **** */
 .signup-container {
-    flex:1;
+    /* flex:1; */
     margin: 30px 40px 0;
 }
 
@@ -183,5 +187,16 @@ fieldset {
 }
 
 
+@media(max-width:1365px) {
+    .green-photo {
+        max-width: 100%;
+        height: 100%;
+    }
+}
 
+@media(max-width:800px) {
+    .logo-overlay {
+        flex-direction: column;
+    }
+}
 

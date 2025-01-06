@@ -11,10 +11,10 @@
         <div class="photo-container">
             <div class="photo-wrapper">
                 <img src="tropical.jpg" alt="Photo of green fern leaves outside" class="green-photo">
-            <div class="logo-overlay">
-                <img src="odin-lined.png" alt="logo of the odin project" id="left-logo">
-                <p id="right-logo">ODIN</p>
-            </div>
+                <div class="logo-overlay">
+                    <img src="odin-lined.png" alt="logo of the odin project" id="left-logo">
+                    <p id="right-logo">ODIN</p>
+                </div>
             </div>
         </div>
     
@@ -31,7 +31,8 @@
             </div>
 
             <form class="form" action="#" method="POST">
-                <h2>Let's do this!</h2>
+                <div class="inner-form">
+                    <h2>Let's do this!</h2>
 
                 <fieldset class="form-row">
                     <div>
@@ -68,12 +69,13 @@
                         <input type="password" id="confirm_password" name="password" required>
                     </div>
                 </fieldset>
-            </form>
+                </div>
 
-            <div class="signup-container">
-                <button type="submit" id="submitBtn">Create Account</button>
-                <p>Already have an account?<span id="green"> Log in</span></p>
-            </div>
+                <div class="signup-container">
+                    <button type="submit" id="submitBtn">Create Account</button>
+                    <p>Already have an account?<span id="green"> Log in</span></p>
+                </div>
+            </form>
         </div>
     </div> 
 </body>
