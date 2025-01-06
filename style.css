@@ -29,7 +29,7 @@ body {
 .photo-container {
     flex: 1;  
     width: 100%;
-    height: auto;
+    height: auto; 
     position: relative; 
     z-index: 1;
 }
@@ -37,21 +37,17 @@ body {
 .photo-wrapper {
     position: relative;
     width: 100%;
-    /* height: auto; */
-    height: 100%; /* Ensures full height of .photo-container */
-    overflow: hidden; /* Prevents the image from spilling out */
+    height: 100%;       /* Ensures full height of .photo-container */
+    overflow: hidden;   /* Prevents the image from spilling out */
 }
 
 .green-photo {
     width: 100%;
-    /* height: auto; */
+    height: 100%;
     display: block;
-
     position: absolute;
     z-index: 2; 
-
-    height: 100%;
-    object-fit: cover; /* Ensures the image scales properly without distortion */
+    object-fit: cover;  /* Ensures the image scales properly without distortion */
     top: 0;
     left: 0;
 }
@@ -61,36 +57,34 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-
     position: relative;
     z-index: 3;
-    top: 166px;
+    bottom: 10px;
+    transform: translateY(130%);
 }
 
 #left-logo {
     flex: 1;
     margin: 10px;
-    max-width: 18%;
+    max-width: 15%;
 }
 
 #right-logo {
     flex: 1;
-    margin: 10px;
-    font-family: Norse-bold;
-    font-size: 90px;
-    color: white;
     flex-grow: 0;
+    align-content: center;
+    font-family: Norse-bold;
+    font-size: 85px;
+    color: white;
+    margin: 10px;
 }
 
 .photo-credit-overlay {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
     position: absolute;
     z-index: 3;
-
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
@@ -105,14 +99,12 @@ body {
 /* **** FORM CONTAINER CSS **** */
 .form-container {
     flex: 2;
-
     display: flex;
     flex-direction: column;
 }
 
 .form-header {
     flex:1;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -188,7 +180,6 @@ body {
 
 /* **** SUBMIT BUTTON AND CONTAINER CSS **** */
 .signup-container {
-    /* flex:1; */
     margin: 30px 40px 0;
 }
 
@@ -216,16 +207,34 @@ fieldset {
 }
 
 
-@media(max-width:1365px) {
+@media(max-width:1000px) {
     .green-photo {
         width: 100%;
-        height: auto;
+        height: 100%;
+    }
+
+    #left-logo {
+        width: auto;
+    }
+
+    #right-logo {
+        font-size: 50px;
     }
 }
 
 @media(max-width:800px) {
     .logo-overlay {
         flex-direction: column;
+        align-items: center;
+    }
+
+    #left-logo {
+        max-width: 25%;
+        width: auto;
+    }
+
+    #right-logo {
+        font-size: 50px;
     }
 
     .form-row {
