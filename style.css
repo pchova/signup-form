@@ -52,6 +52,12 @@ body {
     left: 0;
 }
 
+.photo-header {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+}
+
 .logo-overlay {
     background-color: rgb(0 0 0 / 0.5); 
     display: flex;
@@ -59,8 +65,6 @@ body {
     justify-content: center;
     position: relative;
     z-index: 3;
-    bottom: 10px;
-    transform: translateY(130%);
 }
 
 #left-logo {
@@ -216,6 +220,7 @@ fieldset {
 
     #left-logo {
         width: auto;
+        max-width: 25%;
     }
 
     #right-logo {
