@@ -1,4 +1,13 @@
-@font-face { font-family: Norse-bold; src: url('Norse-Bold.otf'); } 
+@font-face { 
+    font-family: Norse-bold; src: url('Norse-Bold.otf'); 
+} 
+
+:root {
+    --main-bg-color: whitesmoke;
+    --white-bg-color: #FFFFFF;
+    --font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --main-font-size: 15px;
+}
 
 * {
     margin: 0;
@@ -7,19 +16,17 @@
 }
 
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 15px;
+    font-family: var(--font-family);
+    font-size: var(--main-font-size);
     line-height: 1.1;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .main {
-    background-color: whitesmoke;
+    background-color: var(--main-bg-color);
     text-align: left;
-    
     display: flex;
     width: 100%;
     height: 100%;
@@ -80,7 +87,7 @@ body {
     align-content: center;
     font-family: Norse-bold;
     font-size: 85px;
-    color: white;
+    color: var(--white-bg-color);
     margin: 10px;
 }
 
@@ -98,8 +105,8 @@ body {
 }
 
 .photo-credit-overlay p, a {
-    color: white;
-    font-size: 14px;
+    color: var(--white-bg-color);
+    font-size: var(--main-font-size);
 }
 
 /* **** FORM CONTAINER CSS **** */
@@ -133,7 +140,7 @@ body {
 
 .form {
     flex:1;
-    background-color: white;
+    background-color: var(--white-bg-color);
 }
 
 .inner-form {
@@ -141,7 +148,7 @@ body {
 }
 
 .form-row {
-    background-color: white;
+    background-color: var(--white-bg-color);
     display: flex;
     flex-direction: row;
     width: 60%;
@@ -153,7 +160,7 @@ body {
 }
 
 .form-row label {
-    font-size: 13px;
+    font-size: var(--main-font-size);
     letter-spacing: 1px;
     font-weight: bold;
 }
@@ -162,7 +169,7 @@ body {
 .form-row input[type='email'],
 .form-row input[type='tel'],
 .form-row input[type='password'] {
-    background-color: #FFFFFF;
+    background-color: var(--white-bg-color);
     border: 1px solid #D6D9DC;
     border-radius: 3px;
     width: 100%;
@@ -186,7 +193,6 @@ body {
 
 /* **** SUBMIT BUTTON AND CONTAINER CSS **** */
 .signup-container {
-    /*margin: 30px 40px 0;*/
     margin: 30px 40px 200px 40px;
 }
 
@@ -201,12 +207,12 @@ body {
 
 fieldset {
     border: none;
-    background-color: whitesmoke;
+    background-color: var(--main-bg-color);
 }
 
 #submitBtn {
     background-color: #596D48;
-    color: white;
+    color: var(--white-bg-color);
     border: none;
     border-radius: 4px;
     padding: 10px 25px;
