@@ -6,7 +6,7 @@
     --main-bg-color: whitesmoke;
     --white-bg-color: #FFFFFF;
     --green-btn-color: #596D48;
-    --font-family: 'Arial', sans-serif;
+    --font-family: Norse-bold;
     --main-font-size: 1rem;
 }
 
@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
     font-size: var(--main-font-size);
     line-height: 1.1;
     display: flex;
@@ -86,7 +86,7 @@ body {
     flex: 1;
     flex-grow: 0;
     align-content: center;
-    font-family: Norse-bold;
+    font-family: var(--font-family);
     font-size: 85px;
     color: var(--white-bg-color);
     margin: 10px;
